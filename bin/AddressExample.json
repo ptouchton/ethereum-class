@@ -1,0 +1,345 @@
+{
+    "contractName": "AddressExample",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "getBalanceofAccount",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "myAddress",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address"
+                }
+            ],
+            "name": "setAddress",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getBalanceofAccount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"myAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"setAddress\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/paultouchton/workspaces/ethereum-class/AddressExample.sol\":\"AddressExample\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/paultouchton/workspaces/ethereum-class/AddressExample.sol\":{\"keccak256\":\"0x167764c4085f2fd49813cdf7dbaaf4cec3ee5b30c2e2a6dcedfb9b43d3b2bd40\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://4534b711dc194b754349fb56ceae38a908f566a90105511577d6c0bb70e4daed\",\"dweb:/ipfs/QmQpTfXQ7WMuE1nxCgh6S5RsXXmg7rsWTnBMLwp4K4Mr2h\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b5061011d806100206000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80630ace6d0414604157806326b85ee1146061578063e30081a014608a575b600080fd5b6000546001600160a01b0316316040519081526020015b60405180910390f35b6000546073906001600160a01b031681565b6040516001600160a01b0390911681526020016058565b60b7609536600460b9565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b005b60006020828403121560ca57600080fd5b81356001600160a01b038116811460e057600080fd5b939250505056fea2646970667358221220437d46fd17a26fe055219bac4de0295a3d8b54fd1f3528d7078baf165946f4cd64736f6c634300080a0033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b5060043610603c5760003560e01c80630ace6d0414604157806326b85ee1146061578063e30081a014608a575b600080fd5b6000546001600160a01b0316316040519081526020015b60405180910390f35b6000546073906001600160a01b031681565b6040516001600160a01b0390911681526020016058565b60b7609536600460b9565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b005b60006020828403121560ca57600080fd5b81356001600160a01b038116811460e057600080fd5b939250505056fea2646970667358221220437d46fd17a26fe055219bac4de0295a3d8b54fd1f3528d7078baf165946f4cd64736f6c634300080a0033",
+    "sourceMap": "62:253:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "62:253:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;211:102;263:7;289:9;-1:-1:-1;;;;;289:9:0;:17;211:102;;160:25:1;;;148:2;133:18;211:102:0;;;;;;;;92:24;;;;;-1:-1:-1;;;;;92:24:0;;;;;;-1:-1:-1;;;;;360:32:1;;;342:51;;330:2;315:18;92:24:0;196:203:1;123:82:0;;;;;;:::i;:::-;178:9;:20;;-1:-1:-1;;;;;;178:20:0;-1:-1:-1;;;;;178:20:0;;;;;;;;;;123:82;;;404:286:1;463:6;516:2;504:9;495:7;491:23;487:32;484:52;;;532:1;529;522:12;484:52;558:23;;-1:-1:-1;;;;;610:31:1;;600:42;;590:70;;656:1;653;646:12;590:70;679:5;404:286;-1:-1:-1;;;404:286:1:o",
+    "sourcePath": "/Users/paultouchton/workspaces/ethereum-class/AddressExample.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.10+commit.fc410830"
+    },
+    "ast": {
+        "absolutePath": "/Users/paultouchton/workspaces/ethereum-class/AddressExample.sol",
+        "exportedSymbols": {
+            "AddressExample": [
+                23
+            ]
+        },
+        "id": 24,
+        "license": "GPL-3.0",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".1"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "37:23:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "AddressExample",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 23,
+                "linearizedBaseContracts": [
+                    23
+                ],
+                "name": "AddressExample",
+                "nameLocation": "71:14:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "functionSelector": "26b85ee1",
+                        "id": 3,
+                        "mutability": "mutable",
+                        "name": "myAddress",
+                        "nameLocation": "107:9:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 23,
+                        "src": "92:24:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "92:7:0",
+                            "stateMutability": "nonpayable",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 12,
+                            "nodeType": "Block",
+                            "src": "168:37:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 10,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 8,
+                                            "name": "myAddress",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 3,
+                                            "src": "178:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 9,
+                                            "name": "_address",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 5,
+                                            "src": "190:8:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "src": "178:20:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "id": 11,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "178:20:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "e30081a0",
+                        "id": 13,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "setAddress",
+                        "nameLocation": "132:10:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 6,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 5,
+                                    "mutability": "mutable",
+                                    "name": "_address",
+                                    "nameLocation": "151:8:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 13,
+                                    "src": "143:16:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 4,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "143:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "142:18:0"
+                        },
+                        "returnParameters": {
+                            "id": 7,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "168:0:0"
+                        },
+                        "scope": 23,
+                        "src": "123:82:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 21,
+                            "nodeType": "Block",
+                            "src": "272:41:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "expression": {
+                                            "id": 18,
+                                            "name": "myAddress",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 3,
+                                            "src": "289:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "id": 19,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "balance",
+                                        "nodeType": "MemberAccess",
+                                        "src": "289:17:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 17,
+                                    "id": 20,
+                                    "nodeType": "Return",
+                                    "src": "282:24:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "0ace6d04",
+                        "id": 22,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "getBalanceofAccount",
+                        "nameLocation": "220:19:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 14,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "239:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 17,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 16,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 22,
+                                    "src": "263:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 15,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "263:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "262:9:0"
+                        },
+                        "scope": 23,
+                        "src": "211:102:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 24,
+                "src": "62:253:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "37:279:0"
+    },
+    "functionHashes": {
+        "getBalanceofAccount()": "0ace6d04",
+        "myAddress()": "26b85ee1",
+        "setAddress(address)": "e30081a0"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "57000",
+            "executionCost": "105",
+            "totalCost": "57105"
+        },
+        "external": {
+            "getBalanceofAccount()": "4865",
+            "myAddress()": "2337",
+            "setAddress(address)": "24546"
+        }
+    }
+}

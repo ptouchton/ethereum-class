@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "myBool",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "_myBool",
+						"type": "bool"
+					}
+				],
+				"name": "setMyBool",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BooleanExample.sol": "BooleanExample"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BooleanExample.sol": {
+			"keccak256": "0xd0299d5885bd88c2145b76aa711c0f86bf9533fdddc9117f6aaf0c41fa7258d4",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f7d9534de8aada2e19db33d88c0e3e3c540b867f00dbad749b13fb03b6050447",
+				"dweb:/ipfs/Qmeh5x67MjkyLLcj41PGGrChrEf2vckCC4PMetNU8r1CcT"
+			]
+		}
+	},
+	"version": 1
+}
