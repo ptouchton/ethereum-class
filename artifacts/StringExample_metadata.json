@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "myString",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_myString",
+						"type": "string"
+					}
+				],
+				"name": "setMyString",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"StringExample.sol": "StringExample"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"StringExample.sol": {
+			"keccak256": "0xbfeba35d4fde8108716a8f7b29d5e6681b884c2aa05bc8a066d4454751df4546",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://04f5b4a18ef486917aa8673bbad71a4b91cac25a63f6528ae52bffeddaf2bbd2",
+				"dweb:/ipfs/QmbQoQmSTvwDR4X14Km4grhDusZN13PAv88rwQgtH2kS55"
+			]
+		}
+	},
+	"version": 1
+}
