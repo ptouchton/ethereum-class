@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "sendMoney",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "withdrawAllMoney",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"StartStopUpdateExample.sol": "StartStopUpdateExample"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"StartStopUpdateExample.sol": {
+			"keccak256": "0x569b7e65c0b378343583076892fb49b7d7ad43fd9f957a995345c459e2e1598a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c9546fb2e6418eeb434b8bbc47be388fe122eb1b368ca57377ed315344f5fce7",
+				"dweb:/ipfs/QmaswpsAxya7n8Wfj8W1cCcShvKwVej9RJpuZAkRmUgjrK"
+			]
+		}
+	},
+	"version": 1
+}
