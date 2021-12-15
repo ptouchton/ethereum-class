@@ -11,10 +11,49 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "destroySmartContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "sendMoney",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "_paused",
+						"type": "bool"
+					}
+				],
+				"name": "setPaused",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -59,11 +98,11 @@
 	},
 	"sources": {
 		"StartStopUpdateExample.sol": {
-			"keccak256": "0x569b7e65c0b378343583076892fb49b7d7ad43fd9f957a995345c459e2e1598a",
+			"keccak256": "0x38c18ad8579339dbf4a1c120a87ee117626e3d6f0a155ec28e87291863ce712b",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c9546fb2e6418eeb434b8bbc47be388fe122eb1b368ca57377ed315344f5fce7",
-				"dweb:/ipfs/QmaswpsAxya7n8Wfj8W1cCcShvKwVej9RJpuZAkRmUgjrK"
+				"bzz-raw://6fd73e227206975861d2d4271676a8fad67664dfb882c0505d38573d64088723",
+				"dweb:/ipfs/QmQNpVs2eB6XaKWNCbcjT3A2g996G8wSihXdYjSDFfKXTB"
 			]
 		}
 	},
