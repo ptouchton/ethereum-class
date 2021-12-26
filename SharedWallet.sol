@@ -18,6 +18,8 @@ contract SharedWallet {
 
     address payable owner;
 
+    uint256 public lockedUntil;
+
     /// The amount of Ether sent was not higher than
     /// the currently highest amount.
     error NotEnoughEther();
@@ -56,6 +58,7 @@ contract SharedWallet {
             balanceReceived[msg.sender].numPayments
         ] = payment;
         balanceReceived[msg.sender].numPayments++;
+        lockedUntil = block.timestamp + 1 minutes;
     }
 
     function sendMoney(address payable _to, uint256 _amt) public payable {
@@ -64,9 +67,10 @@ contract SharedWallet {
             "Not enough ether"
         );
         assert(
-            balanceReceived[msg.sender].totalBalance >= balanceReceived[msg.sender].totalBalance - _amt
+            balanceReceived[msg.sender].totalBalance >=
+                balanceReceived[msg.sender].totalBalance - _amt
         );
-        
+
         balanceReceived[msg.sender].totalBalance -= _amt;
 
         Payment memory payment = Payment(_amt, block.timestamp);
@@ -75,6 +79,19 @@ contract SharedWallet {
             balanceReceived[msg.sender].numPayments
         ] = payment;
         balanceReceived[_to].numPayments++;
+        lockedUntil = block.timestamp + 1 minutes;
+    }
+
+
+    function withdrawMoney() public {
+        if (lockedUntil < block.timestamp) {
+            uint256 bal = balanceReceived[msg.sender].totalBalance;
+            assert(bal > 0 );
+            balanceReceived[msg.sender].totalBalance = 0;
+
+            address payable to = payable(msg.sender);
+            to.transfer(bal);
+        }
     }
 
     function convertWeiToEth(uint256 _amount) public pure returns (uint256) {

@@ -112,6 +112,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "lockedUntil",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "receiveMoney",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -133,6 +146,13 @@
 				"name": "sendMoney",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawMoney",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -171,11 +191,11 @@
 	},
 	"sources": {
 		"SharedWallet.sol": {
-			"keccak256": "0x9b73d2a35a7ba6aa1bfa2d9fe99519b43b4010d1d63a54b4578efbb9bfc8b446",
+			"keccak256": "0x0c6c292f6e2195bdca7415a91b054793559b7404f0242cf1234cd0a0438a4b4e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://576ab844b510d0ee6a9a02b12df7d0749612844b466424505ada2f7c2f135b80",
-				"dweb:/ipfs/QmWhbrubtEi7FH4CijnkpgNqxsqF9y8Jr71x7DMccifCDE"
+				"bzz-raw://00092722c0985195753f1e0365e2389521ed8f54db2d3a97d280cb3a6e685ca2",
+				"dweb:/ipfs/QmeHVDLDgwN6dDVjN9pGtupNxEWQrWpJGc57P9wm2sbiWZ"
 			]
 		}
 	},
