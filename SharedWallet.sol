@@ -58,9 +58,16 @@ contract SharedWallet {
         balanceReceived[msg.sender].numPayments++;
     }
 
-    function sendMoney(address payable _to, uint256 _amt) public payable{
-        require(balanceReceived[msg.sender].totalBalance - _amt < 0, "Not enough ether");
-        //balanceReceived[msg.sender].totalBalance -= _amt;
+    function sendMoney(address payable _to, uint256 _amt) public payable {
+        require(
+            _amt < balanceReceived[msg.sender].totalBalance,
+            "Not enough ether"
+        );
+        assert(
+            balanceReceived[msg.sender].totalBalance >= balanceReceived[msg.sender].totalBalance - _amt
+        );
+        
+        balanceReceived[msg.sender].totalBalance -= _amt;
 
         Payment memory payment = Payment(_amt, block.timestamp);
         balanceReceived[_to].totalBalance += _amt;

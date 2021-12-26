@@ -120,7 +120,7 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
+						"internalType": "address payable",
 						"name": "_to",
 						"type": "address"
 					},
@@ -132,7 +132,7 @@
 				],
 				"name": "sendMoney",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -171,11 +171,11 @@
 	},
 	"sources": {
 		"SharedWallet.sol": {
-			"keccak256": "0x6eeb2e286283e10c503dce80224b1cbf491a5f8996ff30d4443510c032fa6dc2",
+			"keccak256": "0x9b73d2a35a7ba6aa1bfa2d9fe99519b43b4010d1d63a54b4578efbb9bfc8b446",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f5cdac1998c551c2c0d5f4c691c3aee0457dd33051748da95750123b339795ac",
-				"dweb:/ipfs/QmZgrEJ7MbfAaBbas9Z3gUb1eXcdEcJGECo2Fsym3fTvkB"
+				"bzz-raw://576ab844b510d0ee6a9a02b12df7d0749612844b466424505ada2f7c2f135b80",
+				"dweb:/ipfs/QmWhbrubtEi7FH4CijnkpgNqxsqF9y8Jr71x7DMccifCDE"
 			]
 		}
 	},
